@@ -15,7 +15,7 @@
 
 ## Data Preprocessing
 
-ข้อมูลดิบเป็น text ทั้งหมด (Yes/No, Male/Female, DSL/Fiber optic) ต้องแปลงเป็นตัวเลขก่อน train model
+ข้อมูลดิบบาง coloumn เป็น text (Yes/No, Male/Female, DSL/Fiber optic) ต้องแปลงเป็นตัวเลขก่อน train model
 
 **สิ่งที่ทำ:**
 - ลบ `customerID` ออก — ไม่มีผลต่อการทำนาย
