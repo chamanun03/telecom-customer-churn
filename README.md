@@ -7,7 +7,6 @@
 - **ที่มา:** Telco Customer Churn (IBM Sample Dataset)
 - **ขนาด:** 7,032 ลูกค้า, 24 features
 - **Churn rate:** 26.6% (ข้อมูล imbalanced — ลูกค้าที่ไม่ churn เยอะกว่ามาก)
-- ข้อมูลถูก one-hot encoded มาแล้ว (ไม่มี missing values)
 
 ## เครื่องมือที่ใช้
 
