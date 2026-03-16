@@ -14,6 +14,20 @@
 - Python (scikit-learn, pandas, matplotlib)
 - Google Colab
 
+## Data Preprocessing
+
+ข้อมูลดิบเป็น text ทั้งหมด (Yes/No, Male/Female, DSL/Fiber optic) ต้องแปลงเป็นตัวเลขก่อน train model
+
+**สิ่งที่ทำ:**
+- ลบ `customerID` ออก — ไม่มีผลต่อการทำนาย
+- ลบ 11 rows ที่ `TotalCharges` เป็นค่าว่าง (ลูกค้าที่เพิ่ง signup ยังไม่มียอดเรียกเก็บ)
+- columns ที่มี 2 ค่า (Yes/No, Male/Female) → แปลงเป็น 0/1
+- `Contract` → Label Encoding (Month-to-month=0, One year=1, Two year=2) เรียงตามความยาวสัญญา
+- `InternetService` → One-Hot Encoding แตกเป็น Int_DSL, Int_Fiber, Int_No เพราะมี 3 ค่าที่ไม่มีลำดับ
+- `PaymentMethod` → One-Hot Encoding แตกเป็น Pay_ElecCheck, Pay_MailCheck, Pay_BankTransfer, Pay_CreditCard
+
+7,043 rows → 7,032 rows (24 features + 1 target)
+
 ## Model Comparison
 
 เปรียบเทียบ 2 models:
