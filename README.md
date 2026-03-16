@@ -34,7 +34,7 @@
 - **Logistic Regression** — scale ด้วย StandardScaler ก่อน train
 - **Decision Tree** — max_depth=5 เพื่อป้องกัน overfitting
 
-![Model Comparison](output/chart_model_comparison.png)
+![Model Comparison](chart/chart_model_comparison.png)
 
 | Metric | Logistic Regression | Decision Tree |
 |--------|-------------------|---------------|
@@ -45,14 +45,14 @@
 
 ## Confusion Matrix
 
-![Confusion Matrix](output/chart_confusion_matrix.png)
+![Confusion Matrix](chart/chart_confusion_matrix.png)
 
 - **Logistic Regression** ทายพลาด 171 คนที่ churn จริงแต่ model บอกว่าไม่ churn (46.7% ของ churner ทั้งหมด)
 - **Decision Tree** ทายพลาดน้อยกว่า 135 คน (36.9%) แปลว่าจับลูกค้าที่กำลังจะหายได้ดีกว่า
 
 ## Feature Importance
 
-![Feature Importance](output/chart_feature_importance.png)
+![Feature Importance](chart/chart_feature_importance.png)
 
 3 features ที่มีผลมากที่สุด:
 1. **Contract** (0.516) — ลูกค้าที่ไม่มีสัญญาระยะยาว churn เยอะกว่ามาก
