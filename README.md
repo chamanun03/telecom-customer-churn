@@ -59,16 +59,3 @@ Contract เป็น feature สำคัญที่สุด ลูกค้�
 
 ลูกค้าที่ tenure น้อย + ใช้ Fiber optic มีแนวโน้ม churn สูง อาจเป็นเพราะราคาสูงกว่า DSL แต่ไม่ได้รู้สึกว่าคุ้ม → ควรดูว่า service quality ของ Fiber ตรงกับความคาดหวังหรือไม่
 
-## Project Structure
-
-```
-├── README.md
-├── notebook/
-│   └── churn_prediction.ipynb
-├── data/
-│   └── Telco-Customer-Churn-modeltest.csv
-└── output/
-    ├── chart_model_comparison.png
-    ├── chart_feature_importance.png
-    └── chart_confusion_matrix.png
-```
